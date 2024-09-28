@@ -9,6 +9,7 @@ import "./LandingPage.css";
 import Search from "@mui/icons-material/Search";
 import heroImage from "../assests/heroImage.png";
 import Section from "./Section";
+import Songs from "./Songs";
 const LandingPage = () => {
   const [TopAlbum, setTopAlbum] = useState([]);
   const [NewAlbum,setNewAlbum] = useState([]);
@@ -120,6 +121,7 @@ const LandingPage = () => {
         <Section sx={{ height: "280px" }} songs={TopAlbum} sectionName="TopAlbum" />
         <Section sx={{ height: "280px" }}  songs={NewAlbum} sectionName="NewAlbums" />;
       </Box>
+      <Songs/>
     </>
   );
 };

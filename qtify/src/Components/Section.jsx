@@ -11,8 +11,14 @@ import "./Section.css";
 import Album from "./Album";
 import { Keyboard, Scrollbar, Navigation, Pagination } from 'swiper/modules';
 
-const Section = ({ sectionName,songs }) => {
-  
+const Section = ({ sectionName,songs, isAlbum }) => {
+  const genres = [
+    { id: 1, name: "Pop" },
+    { id: 2, name: "Pop" },
+    { id: 3, name: "Rock" },
+    { id: 4, name: "Jazz" },
+    { id: 5, name: "Bules" },
+  ];
 
   return (
     <Box
