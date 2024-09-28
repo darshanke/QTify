@@ -52,7 +52,7 @@ const LandingPage = () => {
             sx={{
               backgroundColor: "rgb(255,255,255,1)",
               height: "48px",
-              maxWidth: "568px",
+              width: "568px",
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -60,9 +60,9 @@ const LandingPage = () => {
             }}
           >
             <TextField
-              placeholder="Search a album of your choice"
+              placeholder="Search a album of your choice" 
               sx={{
-                maxWidth: "502px",
+                width: "502px",
               }}
             />
             <Button
