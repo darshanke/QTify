@@ -28,11 +28,10 @@ const Header = ({ children }) => {
           width="67"
           height="34"
           style={{
-            padding: "0 32px",
-            
-            marginLeft: "16px",
-         
-            opacity: 1, 
+            padding: "0 32px", // Maintain horizontal padding
+            marginLeft: "16px", // Ensure space to the left
+            marginTop: "10px", // Adjust top margin for vertical centering
+            opacity: 1, // Keep logo fully visible
             verticalAlign: "middle",
           }}
         />
