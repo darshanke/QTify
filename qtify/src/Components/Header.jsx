@@ -19,8 +19,8 @@ const Header = ({ children }) => {
           margin: "0 auto",
           textAlign: "center",
           backgroundColor: "#66bb6a",
-          // paddingX: "2rem",
-          fontFamily: "Poppins",
+  
+        
         }}
         className="header"
       >
@@ -38,12 +38,15 @@ const Header = ({ children }) => {
             sx={{
               backgroundColor: "rgba(18, 18, 18, 1)",
               width: "138px",
-              height: "27px",
+              height: "47px",
               color: "#34C94B",
               borderRadius: "8px",
+              fontFamily: 'Poppins',
+              textTransform: 'none',
+              textAlign: 'center',
             }}
           >
-            Give FeedBack
+          Give Feedback
           </Button>
         </Box>
       </Box>
