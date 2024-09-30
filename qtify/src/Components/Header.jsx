@@ -29,11 +29,13 @@ const Header = ({ children }) => {
   width="67"
   height="34"
   style={{
-    padding: "0 32px",   // Horizontal padding
-    marginLeft: "16px",  // Left margin
-    marginTop: "5px",    // Adjusted top margin
+    padding: "0",               // Horizontal padding
+    marginLeft: "32px",        // Left margin
+    marginTop: "auto",         // Use auto for vertical centering in flex containers
+    marginBottom: "auto",      // Use auto for vertical centering in flex containers
     opacity: 1,
-    verticalAlign: "middle",
+    verticalAlign: "middle",   // This may not have an effect; consider using display: inline-block or block
+    display: "inline-block",    // Allows for better vertical alignment control
   }}
 />
 
