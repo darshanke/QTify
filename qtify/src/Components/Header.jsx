@@ -19,8 +19,6 @@ const Header = ({ children }) => {
           margin: "0 auto",
           textAlign: "center",
           backgroundColor: "#66bb6a",
-  
-        
         }}
         className="header"
       >
@@ -29,11 +27,17 @@ const Header = ({ children }) => {
           alt="Qtify Logo"
           width="67"
           height="34"
-          style={{ padding: "0 20px", marginLeft: "16px", verticalAlign: "middle" }}
+          style={{
+            padding: "0 20px",
+            marginLeft: "16px",
+         
+            opacity: 1, 
+            verticalAlign: "middle",
+          }}
         />
 
         {children}
-        <Box sx={{paddingX: "16px"}}>
+        <Box sx={{ paddingX: "16px" }}>
           <Button
             sx={{
               backgroundColor: "rgba(18, 18, 18, 1)",
@@ -41,12 +45,12 @@ const Header = ({ children }) => {
               height: "47px",
               color: "#34C94B",
               borderRadius: "8px",
-              fontFamily: 'Poppins',
-              textTransform: 'none',
-              textAlign: 'center',
+              fontFamily: "Poppins",
+              textTransform: "none",
+              textAlign: "center",
             }}
           >
-          Give Feedback
+            Give Feedback
           </Button>
         </Box>
       </Box>
