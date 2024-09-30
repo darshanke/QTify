@@ -27,11 +27,11 @@ const Header = ({ children }) => {
           alt="Qtify Logo"
           width="67"
           height="34"
-          style={{
+          sx={{
             padding: "0 32px !important",
-            marginLeft: "16px !important", 
-            marginTop: "10px !important", 
-            opacity: 1, 
+            marginLeft: "16px !important",
+            marginTop: "10px !important",
+            opacity: 1,
             verticalAlign: "middle",
           }}
         />
