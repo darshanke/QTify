@@ -29,7 +29,7 @@ const Header = ({ children }) => {
           alt="Qtify Logo"
           width="67"
           height="34"
-          style={{ padding: "20px", verticalAlign: "middle" }}
+          style={{ padding: "0 20px", marginLeft: "16px", verticalAlign: "middle" }}
         />
 
         {children}
