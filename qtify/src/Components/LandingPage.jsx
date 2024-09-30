@@ -1,8 +1,9 @@
 import "./Header.css";
 import Header from "./Header";
 import { TextField, Typography, Box, Button } from "@mui/material";
-import AlbumList from "./AlbumList";
-import Album from "./Album";
+import Stack from '@mui/joy/Stack';
+import Faq from "./Faq";
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./LandingPage.css";
@@ -12,7 +13,7 @@ import Section from "./Section";
 import Songs from "./Songs";
 const LandingPage = () => {
   const [TopAlbum, setTopAlbum] = useState([]);
-  const [NewAlbum,setNewAlbum] = useState([]);
+  const [NewAlbum, setNewAlbum] = useState([]);
 
   const topAlbum = async () => {
     try {
@@ -38,7 +39,7 @@ const LandingPage = () => {
       }
     }
   };
- 
+
   useEffect(() => {
     topAlbum();
     newAlbum();
@@ -60,7 +61,7 @@ const LandingPage = () => {
             }}
           >
             <TextField
-              placeholder="Search a album of your choice" 
+              placeholder="Search a album of your choice"
               sx={{
                 width: "502px",
               }}
@@ -118,10 +119,22 @@ const LandingPage = () => {
           backgroundColor: "rgba(18, 18, 18, 1)",
         }}
       >
-        <Section sx={{ height: "280px" }} songs={TopAlbum} sectionName="TopAlbum" />
-        <Section sx={{ height: "280px" }}  songs={NewAlbum} sectionName="NewAlbums" />;
+        <Section
+          sx={{ height: "280px" }}
+          songs={TopAlbum}
+          sectionName="TopAlbum"
+          likes={false}
+        />
+        <Section
+          sx={{ height: "280px" }}
+          songs={NewAlbum}
+          sectionName="NewAlbums"
+          likes={false}
+        />
+        ;
       </Box>
-      <Songs/>
+      <Songs likes={true} />
+     <Faq />
     </>
   );
 };

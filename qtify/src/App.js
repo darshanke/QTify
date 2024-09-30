@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          {/* Add more routes here as needed */}
+     
         </Routes>
       </div>
     </Router>

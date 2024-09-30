@@ -27,12 +27,15 @@ const Header = ({ children }) => {
           alt="Qtify Logo"
           width="67"
           height="34"
-          style={{ padding: "20px" }}
+          style={{ padding: "20px", verticalAlign: "middle"  }}
+          
         />
 
         {children}
         <Button
+
           sx={{
+            backgroundColor: "rgba(18, 18, 18, 1)",
             width: "138",
             height: "27",
           }}

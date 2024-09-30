@@ -11,14 +11,8 @@ import "./Section.css";
 import Album from "./Album";
 import { Keyboard, Scrollbar, Navigation, Pagination } from 'swiper/modules';
 
-const Section = ({ sectionName,songs, isAlbum }) => {
-  const genres = [
-    { id: 1, name: "Pop" },
-    { id: 2, name: "Pop" },
-    { id: 3, name: "Rock" },
-    { id: 4, name: "Jazz" },
-    { id: 5, name: "Bules" },
-  ];
+const Section = ({ sectionName,songs, isAlbum ,likes}) => {
+ 
 
   return (
     <Box
@@ -28,7 +22,7 @@ const Section = ({ sectionName,songs, isAlbum }) => {
         backgroundColor: "rgba(18, 18, 18, 1)",
       }}
     >
-      <Box
+      {!isAlbum && <Box
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -43,7 +37,7 @@ const Section = ({ sectionName,songs, isAlbum }) => {
         <Typography sx={{ color: "rgba(52, 201, 75, 1)" }}>
           Show all
         </Typography>
-      </Box>
+      </Box>}
       
       <Box sx={{ paddingX: "2rem" }}>
       <Swiper
@@ -55,7 +49,7 @@ const Section = ({ sectionName,songs, isAlbum }) => {
       >
         {songs.map((item) => (
           <SwiperSlide key={item.id}>
-            <Album item={item} />
+            <Album item={item} likes={likes} />
           </SwiperSlide>
         ))}
       </Swiper>
