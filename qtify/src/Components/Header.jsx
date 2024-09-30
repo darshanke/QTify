@@ -23,19 +23,19 @@ const Header = ({ children }) => {
         }}
         className="header"
       >
-        <img
-          src={logo}
-          alt="Qtify Logo"
-          width="67"
-          height="34"
-          sx={{
-            padding: "0 68px",
-            marginLeft: "16px !important",
-            marginTop: "10px !important",
-            opacity: 1,
-            verticalAlign: "middle",
-          }}
-        />
+       <img
+  src={logo}
+  alt="Qtify Logo"
+  width="67"
+  height="34"
+  style={{
+    padding: "0 32px",   // Horizontal padding
+    marginLeft: "16px",  // Left margin
+    marginTop: "5px",    // Adjusted top margin
+    opacity: 1,
+    verticalAlign: "middle",
+  }}
+/>
 
         {children}
         <Box sx={{ paddingX: "16px" }}>
