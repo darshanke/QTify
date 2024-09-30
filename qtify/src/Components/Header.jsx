@@ -29,6 +29,7 @@ const Header = ({ children }) => {
           height="34"
           style={{
             padding: "0 32px",
+            
             marginLeft: "16px",
          
             opacity: 1, 
