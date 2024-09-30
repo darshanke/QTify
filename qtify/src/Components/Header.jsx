@@ -19,6 +19,7 @@ const Header = ({ children }) => {
           margin: "0 auto",
           textAlign: "center",
           backgroundColor: "#66bb6a",
+          paddingX: "1rem"
         }}
         className="header"
       >
@@ -28,7 +29,7 @@ const Header = ({ children }) => {
           width="67"
           height="34"
           sx={{
-            padding: "0 32px !important",
+            padding: "0 68px",
             marginLeft: "16px !important",
             marginTop: "10px !important",
             opacity: 1,
