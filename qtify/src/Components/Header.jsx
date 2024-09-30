@@ -15,10 +15,11 @@ const Header = ({ children }) => {
           alignItems: "center",
           width: "100%",
           height: "74px",
-        
+         cursor: 'pointer',
           margin: "0 auto",
           textAlign: "center",
           backgroundColor: "#66bb6a",
+          // paddingX: "2rem",
         }}
         className="header"
       >
@@ -27,8 +28,8 @@ const Header = ({ children }) => {
           alt="Qtify Logo"
           width="67"
           height="34"
-          style={{ padding: "20px", verticalAlign: "middle"  }}
-          
+          style={{ padding: "20px", verticalAlign: "middle",   }}
+         
         />
 
         {children}
@@ -38,9 +39,12 @@ const Header = ({ children }) => {
             backgroundColor: "rgba(18, 18, 18, 1)",
             width: "138",
             height: "27",
+            color: "#34C94B",
+            borderRadius: "8px",
+          
           }}
         >
-          <img src={giveFeedBack} alt="feedBack" className="feedBackImg" />
+          Give FeedBack
         </Button>
       </Box>
     </>
